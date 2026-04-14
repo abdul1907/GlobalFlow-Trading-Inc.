@@ -1,0 +1,16 @@
+*** Begin Patch
+*** Update File: app/products/page.tsx
+@@
+-      const matchesSearch =
+-        normalizedQuery.length === 0
+-          ? true
+-          : ${product.title}  
+-              .toLowerCase()
+-              .includes(normalizedQuery);
++      const matchesSearch =
++        normalizedQuery.length === 0
++          ? true
++          : `${product.title} ${product.description} ${product.keywords}`
++              .toLowerCase()
++              .includes(normalizedQuery);
+*** End Patch
