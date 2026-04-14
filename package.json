@@ -6,6 +6,6 @@
     "vercel-build": "npm --prefix nextjs-site run build"
   },
   "dependencies": {
-    "next": "^15.5.14"
+    "next": "^15.5.15"
   }
 }
